@@ -1,0 +1,51 @@
+body{
+    font-size: 16px;
+}
+/*==============
+	Layout
+================*/
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+.left_side{
+	width: 50vw; 
+    height: 100vh;
+    background-image: url('../images/cover_img.jpg');
+    background-repeat: no-repeat;
+}
+.right_side{
+	width: 40vw;
+}
+
+.signup_nav a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.main_content input[type="submit"]{
+	color: white;
+	background-color: #0066cc;
+}
+
+/* ==============
+    Media query
+=================*/
+@media screen and (min-width: 768px){
+    .col {
+        float: left;
+    }
+    .clearfix{
+        content: " ";
+        clear: both;
+    }
+}
+@media screen and (max-width: 768px){
+     .left_side{
+        width: 100%; 
+        height: 300px;
+        background-image: url('../img/cover_img.jpg');
+	    background-repeat: no-repeat;  	
+    }
+}

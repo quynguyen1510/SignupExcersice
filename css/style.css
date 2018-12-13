@@ -27,6 +27,10 @@ body{
 .main_content input[type="submit"]{
 	color: white;
 	background-color: #0066cc;
+    width: 40vw;
+}
+.main_content ul li{
+    list-style-type: none;
 }
 
 /* ==============
@@ -37,7 +41,6 @@ body{
         float: left;
     }
     .clearfix{
-        content: " ";
         clear: both;
     }
 }

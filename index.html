@@ -3,46 +3,44 @@
 
 <head>
 	<title>
-		Sigin TimeCloud
+		Signup TimeCloud
 	</title>
-	<link rel="stylesheet" type="text/css" href="../SignupExcersice/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
 </head>
 
 <body>
-	<div class="container">
-		<div class="left_side col">
-			<img src="../SignupExcersice/images/cover_img.jpg">
-		</div>
-		<div class="right_side col">
-			<div class="content">
-				<div class="signup_nav">
-					<p>Already have an account? <a href="#">Sign in</a></p>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6"  id="lefSide">
+				<img id="imgCover" src="images/cover_img.jpg">
+			</div>
+			<div class="col-md-6">
+				<div id="nav">
+					<p id="navTitle">Already have an account?</p>
+					<a href="#">Sign in</a>
 				</div>
-				<div class="clear_fix"></div>
-				<div class="title">
-					<h3>Get started absolutely free</h3>
-					<p>Free forever. No credit card needed</p>
-				</div>
-
-				<div class="main_content">
-					<form method="post" action="#">
-						<ul>
-							<li>
-								<label for="email">Email</label><br>
-								<input type="Email" id="email" name="email" placeholder="julie@example.com">
-							</li>
-							<li>
-								<label for="password">Password</label><br>
-								<input type="Password" id="password" name="password" placeholder="6+character">
-							</li>
-							<li>
-								<label for="confirm_passwork">Confirm Password</label><br>
-								<input type="Password" id="confirm_passwork" name="confirm_passwork" placeholder="Please confirm your password">
-							</li>
-						</ul>
-						<input type="submit" id="submit" value="Sign up Free" >
-					</form>
-				</div>
+				<h3 class="mt-5">Get started absolutely free</h3>
+				<p>Free forever. No credit card needed</p>
+				<form class="mt-5 mr-3">
+					<div class="form-group">
+					    <label for="exampleInputEmail1">Email</label>
+					    <input type="email" class="form-control mt-3" id="inputEmail" placeholder="julie@example.com">
+					</div>
+				  	<div class="form-group">
+					    <label for="exampleInputPassword1">Password</label>
+					    <input type="password" class="form-control mt-3" id="inputPassword" placeholder="6+ characters">
+				 	</div>
+				 	<div class="form-group">
+					    <label for="exampleInputPassword1">Confirm Password</label>
+					    <input type="password" class="form-control mt-3" id="inputConfirmPassword" placeholder="Please confirm your password">
+				 	</div>
+				 	<div class="col-submit">
+				  		<button type="submit" class="btn btn-primary">Sign up free</button>
+				  	</div>
+				</form>
 			</div>
 		</div>
 	</div>
